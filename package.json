@@ -12,7 +12,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:drew-y/cliffy.git"
+    "url": "git@github.com:a1rb0rn3/cliffy.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
