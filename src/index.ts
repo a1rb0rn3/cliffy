@@ -19,11 +19,13 @@ export class CLI {
 
     constructor(opts: {
         input?: NodeJS.ReadableStream,
-        output?: NodeJS.WritableStream
+        output?: NodeJS.WritableStream,
+        completer?: readline.Completer
     } = {}) {
         const input = opts.input || process.stdin;
         const output = opts.output || process.stdout;
-        this.readline = readline.createInterface(input, output);
+        const completer = opts.completer || undefined;
+        this.readline = readline.createInterface(input, output, completer);
         this.readline.pause();
     }
 
